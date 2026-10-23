@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <style>
+  <head>
+    <style>
   html, body { margin: 0; width: 100%; height: 100%; background: #000; overflow: hidden; }
   #unity-container {
     position: fixed !important;
     left: 0 !important; top: 0 !important;
     transform: none !important;
     width: 100% !important; height: 100% !important;
+  }
+  #unity-fullscreen-container {
+    position: absolute !important;
+    left: 0; top: 0; width: 100%; height: 100%;
     display: flex; align-items: center; justify-content: center;
   }
   #unity-canvas {
@@ -15,7 +20,6 @@
   }
   #unity-footer { display: none !important; }
   </style>
-  <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | test 2d</title>
